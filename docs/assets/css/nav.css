@@ -1,0 +1,67 @@
+nav {
+    background-color: #004785;
+    width: 100%;
+}
+
+.nav-item {
+    color: white !important;
+    font-size: 32px;
+    font-family: Montserrat;
+}
+
+.navbar-toggler-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.active {
+    font-weight: bolder;
+}
+
+
+/* navbar icon on mobile */
+
+.navbar-toggler {
+    background-color: #AB3A32;
+    padding: 10px;
+}
+
+.navbar-toggler-icon {
+    background-image: url(/assets/img/menu.png) !important;
+    height: 60px;
+    width: 60px;
+}
+
+#logo {
+    height: 100px;
+}
+
+.small-button {
+    background-color: white;
+}
+
+#home,
+#tour {
+    padding-right: 50px;
+}
+
+.nav-item:hover {
+    color: #AB3A32 !important;
+    font-weight: bolder !important;
+}
+
+@media (min-width: 1200px) {
+    #play {
+        padding: 10px 30px;
+        margin-right: 100px;
+        color: white;
+        background-color: #AB3A32;
+        border-radius: 20px;
+    }
+    #play:hover {
+        color: white !important;
+    }
+    #logo {
+        padding: 0px 100px;
+    }
+}

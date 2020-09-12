@@ -1,0 +1,64 @@
+#alert-box {
+    background-color: rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 0px 20px 80px 20px;
+}
+
+#alert-text {
+    max-width: 1200px;
+    font-size: 32px;
+    font-weight: 600;
+    margin: auto;
+    font-family: Montserrat;
+}
+
+#alert-img-container {
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+}
+
+
+/* tour part */
+
+#tour-box {
+    height: 90vh;
+    position: relative;
+}
+
+#top-box {
+    position: absolute;
+    top: 20px;
+}
+
+#top-arrow {
+    display: inline-block;
+    margin: auto;
+    padding-right: 20px;
+}
+
+#top-text {
+    display: inline-block;
+    margin: auto;
+}
+
+#right-box {
+    text-align: center;
+    position: absolute;
+}
+
+#right-arrow {
+    padding-bottom: 40px;
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+#right-text {
+    margin: auto;
+}
+
+p {
+    font-family: Montserrat;
+    font-weight: bolder;
+    font-size: 32px;
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="description">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/tour.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+
+
+
+    <title>eWharton</title>
+</head>
+
+<body>
+    <div class="nav">
+        <nav class="navbar navbar-expand-xl">
+            <a href="home" class="navbar-brand">
+                <img src="/assets/img/logo.png" alt="logo" id="logo">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav" style="padding-top:8px">
+                    <a id=home href="book" class="nav-item nav-link">Home</a>
+                    <a id=tour href="instructors" class="nav-item nav-link active">Virtual Tour</a>
+                    <a id=events href="whatisbande" class="nav-item nav-link">Events</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a id="play" href="play" class="nav-item nav-link">Play Now</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="alert-box">
+        <div id="alert-img-container">
+            <a onclick=closeAlert()>
+                <img id="alert-img" src="assets/img/x.png">
+            </a>
+        </div>
+        <p id="alert-text">
+            Welcome to the eWharton virtual tour. Use the arrows located around your screen to tour the Wharton School.
+        </p>
+    </div>
+
+    <div id="tour-box">
+        <div id="top-box">
+            <img id="top-arrow" src="assets/img/arrow.png">
+            <p id="top-text">Top Location</p>
+        </div>
+        <div id="right-box">
+            <img id="right-arrow" src="assets/img/arrow.png">
+            <p id="right-text">Right Location</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/tour.js"></script>
+
+</body>
+
+
+</html>
