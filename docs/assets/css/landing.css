@@ -2,6 +2,7 @@
     position: fixed;
     top: 120px;
     left: 0px;
+    opacity: 0.8;
 }
 
 #video-container {
@@ -21,8 +22,45 @@
     font-size: 64px;
     font-weight: bold;
     margin: 0px;
+    color: white;
+}
+
+#tour-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#tour-button {
+    /* background-color: #004785; */
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 32px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    /* color: rgba(255, 255, 255, 0.8); */
+}
+
+#tour-img {
+    transform: rotate(90deg)
 }
 
 #tagline {
     font-size: 32px;
+}
+
+@media(max-width: 1200px) {
+    #landing-video {
+        display: none;
+    }
+    #main-container {
+        top: 50px;
+    }
+    #main-text {
+        font-size: 54px;
+    }
+    #video-container {
+        height: calc(100vh - 100px);
+        background-image: url("/assets/img/RobloxScreenShot20200525_232021279\ 2.png");
+    }
 }

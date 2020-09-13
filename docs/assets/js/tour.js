@@ -121,12 +121,37 @@ class TourScreen {
 }
 
 classroomOne = new TourScreen();
-hallwayOne = new TourScreen();
+classroomTwo = new TourScreen();
 
-classroomOne.setVals(hallwayOne, hallwayOne, hallwayOne, hallwayOne, "Classroom One", "", "url('/assets/img/classroom1.png')");
-hallwayOne.setVals("", classroomOne, "", "", "Hallway One", "", "url('/assets/img/hallway1.png')");
+bus = new TourScreen();
+dormOne = new TourScreen();
+dormTwo = new TourScreen();
+dormHallWay = new TourScreen();
+dormEntrance = new TourScreen();
+spawn = new TourScreen();
+busIn = new TourScreen();
+bakerForum = new TourScreen();
+staircase = new TourScreen();
+koo = new TourScreen();
 
-let current = classroomOne;
+
+bakerForum.setVals(staircase, spawn, classroomTwo, classroomOne, "Baker Forum", "", "url('/assets/img/bakerForum.png')");
+staircase.setVals(bakerForum, koo, "", "", "Staircase", "", "url('/assets/img/staircase.png')");
+classroomOne.setVals("", "", bakerForum, "", "Classroom One", "", "url('/assets/img/classroom1.png')");
+classroomTwo.setVals("", "", "", bakerForum, "Classroom Two", "", "url('/assets/img/classroom2.png')");
+koo.setVals("", staircase, "", "", "Koo Plaza", "", "url('/assets/img/koo.png')")
+
+spawn.setVals(bakerForum, "", bus, "", "Main Entrance", "", "url('/assets/img/mainEntrance.png')")
+bus.setVals(busIn, "", "", spawn, "Complex Center", "", "url('/assets/img/complexCenter.png')");
+
+busIn.setVals(dormEntrance, bus, "", "", "Campus Shuttle", "", "url('/assets/img/busIn.png')");
+
+dormEntrance.setVals(dormHallWay, busIn, "", "", "Dorm Entrance", "", "url('/assets/img/dormEntrance.png')");
+dormHallWay.setVals("", dormEntrance, dormTwo, dormOne, "Dorm Hallway", "", "url('/assets/img/dormHallway.png')");
+dormOne.setVals("", "", dormHallWay, "", "Dorm One", "", "url('/assets/img/dorms1.png')");
+dormTwo.setVals("", "", "", dormHallWay, "Dorm Two", "", "url('/assets/img/dorm2.png')");
+
+let current = spawn;
 
 window.onload = function() { renderTour(true, ""); };
 window.onresize = function() { renderTour(false, ""); };
