@@ -1,5 +1,33 @@
 // Open the Modal
-function openModal() {
+function openModal(num) {
+    console.log(num);
+    if (num == 1) { // music festival
+        console.log("music");
+        document.getElementsByClassName("slide1")[0].src = "/assets/img/robloxKooPlaza2_2.png";
+        document.getElementsByClassName("slide2")[0].src = "/assets/img/irlKooPlaza2_2.jpg";
+        document.getElementsByClassName("slide3")[0].src = "/assets/img/robloxKooPlaza1_2.png";
+        document.getElementsByClassName("slide4")[0].src = "/assets/img/irlKooPlaza1_2.jpg";
+    } else if (num == 2) { // dorms
+        document.getElementsByClassName("slide1")[0].src = "/assets/img/robloxInterior1_2.png";
+        document.getElementsByClassName("slide2")[0].src = "/assets/img/irlDorms1_2.jpg";
+        document.getElementsByClassName("slide3")[0].src = "/assets/img/robloxInterior2_2.png";
+        document.getElementsByClassName("slide4")[0].src = "/assets/img/irlDorms2_2.jpg";
+    } else if (num == 3) { // education
+        document.getElementsByClassName("slide1")[0].src = "/assets/img/modaledu3.png";
+        document.getElementsByClassName("slide2")[0].src = "/assets/img/modaledu2.jpg";
+        document.getElementsByClassName("slide3")[0].src = "/assets/img/modaledu4.png";
+        document.getElementsByClassName("slide4")[0].src = "/assets/img/modaledu1.jpg";
+    } else if (num == 4) { // exterior
+        document.getElementsByClassName("slide1")[0].src = "/assets/img/robloxExterior2_2.png";
+        document.getElementsByClassName("slide2")[0].src = "/assets/img/irlExterior1_2.png";
+        document.getElementsByClassName("slide3")[0].src = "/assets/img/robloxExterior1_2.png";
+        document.getElementsByClassName("slide4")[0].src = "/assets/img/irlExterior2_2.png";
+    } else if (num == 5) { // tour guides
+        document.getElementsByClassName("slide1")[0].src = "/assets/img/robloxNPC1_2.png";
+        document.getElementsByClassName("slide2")[0].src = "/assets/img/robloxNPC2_2.png";
+        document.getElementsByClassName("slide3")[0].src = "/assets/img/robloxNPC3_2.png";
+        document.getElementsByClassName("slide4")[0].src = "/assets/img/robloxNPC2_2.png";
+    }
     document.getElementById("myModal").style.display = "block";
 }
 
@@ -21,7 +49,8 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(n, num) {
+
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("demo");
