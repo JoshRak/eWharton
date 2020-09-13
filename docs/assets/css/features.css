@@ -1,0 +1,34 @@
+/* @media (min-width: 1200px) {
+    .col {
+        width: 33%;
+    }
+} */
+
+body {
+    font-family: Montserrat;
+}
+
+.col {
+    text-align: center;
+    padding: 25px;
+}
+
+.desc-header {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.desc-container {
+    font-size: 24px;
+    padding: 25px;
+    border: solid #004785 5px;
+}
+
+.desc-button {
+    background-color: #AB3A32;
+    color: white;
+    border-radius: 40px;
+    font-size: 32px;
+    padding: 10px 40px;
+    border-color: transparent;
+}

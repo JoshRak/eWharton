@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="assets/css/tour.css">
     <link rel="stylesheet" href="assets/css/nav.css">
 
-
-
     <title>eWharton</title>
 </head>
 
@@ -33,12 +31,12 @@
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav" style="padding-top:8px">
-                    <a id=home href="book" class="nav-item nav-link">Home</a>
-                    <a id=tour href="instructors" class="nav-item nav-link active">Virtual Tour</a>
-                    <a id=events href="whatisbande" class="nav-item nav-link">Events</a>
+                    <a id=home href="home.html" class="nav-item nav-link">Home</a>
+                    <a id=tour href="tour.html" class="nav-item nav-link active">Virtual Tour</a>
+                    <a id=events href="Features.html" class="nav-item nav-link">Features</a>
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a id="play" href="play" class="nav-item nav-link">Play Now</a>
+                    <a id="play" href="play.html" class="nav-item nav-link">Play Now</a>
                 </div>
             </div>
         </nav>
@@ -55,20 +53,31 @@
     </div>
 
     <div id="tour-box">
-        <div id="top-box">
+        <div id="main-label">
+            Classroom One
+        </div>
+        <a onclick="renderTour(true, 'top')" id="top-box" class="arrow-box">
             <img id="top-arrow" src="assets/img/arrow.png">
             <p id="top-text">Top Location</p>
-        </div>
-        <div id="right-box">
+        </a>
+        <a onclick="renderTour(true, 'right')" class="arrow-box" id="right-box">
             <img id="right-arrow" src="assets/img/arrow.png">
             <p id="right-text">Right Location</p>
-        </div>
+        </a>
+        <a onclick="renderTour(true, 'bottom')" class="arrow-box" id="bottom-box">
+            <img id="bottom-arrow" src="assets/img/arrow.png">
+            <p id="bottom-text">Bottom Location</p>
+        </a>
+        <a onclick="renderTour(true, 'left')" id="left-box" class="arrow-box">
+            <img id="left-arrow" src="assets/img/arrow.png ">
+            <p id="left-text">Left Location</p>
+        </a>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="assets/js/tour.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <script src="assets/js/tour.js "></script>
 
 </body>
 
