@@ -4,6 +4,7 @@ var path = require('path');
 fs = require('fs');
 var app = express();
 
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -14,4 +15,6 @@ app.get('/', function(req, res) {
     res.send("Hello World");
 });
 
-app.listen(5000);
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
