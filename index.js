@@ -24,7 +24,6 @@ app.get('/features', function(req, res) {
     res.send("features.html");
 });
 
-
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
