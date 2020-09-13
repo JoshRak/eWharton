@@ -5,7 +5,7 @@ nav {
 
 .nav-item {
     color: white !important;
-    font-size: 32px;
+    font-size: 24px;
     font-family: Montserrat;
 }
 
@@ -28,8 +28,8 @@ nav {
 
 .navbar-toggler-icon {
     background-image: url(/assets/img/menu.png) !important;
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
 }
 
 #logo {
@@ -51,6 +51,9 @@ nav {
 }
 
 @media (min-width: 1200px) {
+    .nav-item {
+        font-size: 32px;
+    }
     #play {
         padding: 10px 30px;
         margin-right: 100px;

@@ -2,18 +2,32 @@ function closeAlert() {
     document.getElementById("alert-box").style.display = "none";
 }
 
-// function fade(element) {
-//     var op = 1;
-//     var timer = setInterval(function() {
-//         if (op <= 0.1) {
-//             clearInterval(timer);
-//             element.style.display = 'none';
-//         }
-//         element.style.opacity = op;
-//         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-//         op -= op * 0.1;
-//     }, 50);
-// }
+function fade(element) {
+    var op = 1;
+    var timer = setInterval(function() {
+        if (op <= 0.1) {
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
+
+function fadeIn(element, interval) {
+    var op = 0.1;
+    console.log(op);
+    var timer = setInterval(function() {
+        if (op >= 0.9) {
+            clearInterval(timer);
+            element.style.opacity = 1;
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + (op * 100) + ")";
+        op += op * 0.1;
+    }, interval);
+}
 
 function renderTour(load, next) {
     var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
@@ -31,7 +45,14 @@ function renderTour(load, next) {
         document.getElementById("tour-box").style.backgroundImage = current.image;
         // console.log(current.image);
         document.getElementById("tour-box").style.backgroundImage = current.image;
+
+        document.getElementById("main-label").style.top = "25%";
+
+        document.getElementById("tour-box").style.opacity = "0";
+
+        fadeIn(document.getElementById("tour-box"), 25);
     }
+
 
     document.getElementById("tour-box").style.height = vh - document.getElementsByClassName("nav")[0].offsetHeight + "px";
 
@@ -73,11 +94,12 @@ function renderTour(load, next) {
     }
 
     // document.getElementById("main-label").style.left = .50 * vw - (document.getElementById("main-label").offsetWidth / 2.0) + "px";
-    document.getElementById("main-label").style.top = "25%";
 
     // setTimeout(function() {
-    //     fade(document.getElementById("main-label"));
-    // }, 5000)
+    //     fadeIn(document.getElementById("tour-box"));
+    // }, 0);
+
+
 }
 
 class TourScreen {

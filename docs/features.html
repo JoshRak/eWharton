@@ -10,6 +10,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='assets/css/features.css' rel='stylesheet'>
@@ -29,47 +31,160 @@
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav" style="padding-top:8px">
-                    <a id=home href="home.html" class="nav-item nav-link active">Home</a>
+                    <a id=home href="landing.html" class="nav-item nav-link active">Home</a>
                     <a id=tour href="tour.html" class="nav-item nav-link">Virtual Tour</a>
                     <a id=events href="features.html" class="nav-item nav-link active">Features</a>
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a id="play" href="play.html" class="nav-item nav-link">Play Now</a>
+                    <a id="play" target="_blank" href="https://www.roblox.com/games/5680965878/University-of-Pennsylvania-VVharton" class="nav-item nav-link">Play Now</a>
                 </div>
             </div>
         </nav>
     </div>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="desc-container">
-                    <img class="desc-image">
-                    <h1 class="desc-header">
+        <div class="row boxes">
+            <div class="col-12 col-md-6 col-xl-4">
+                <div onclick="location.href='#music';" class="desc-container ">
+                    <img class="desc-image " src="assets/img/festivalIcon.png ">
+                    <h1 class="desc-header ">
+                        Music Festival
+                    </h1>
+                    <p class="desc-text ">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using It is a long
+                    </p>
+                    <!-- <button class="desc-button ">
+                            Learn More
+                        </button> -->
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div onclick="location.href='#dorms';" class="desc-container ">
+                    <img class="desc-image " src="assets/img/bedIcon.png ">
+                    <h1 class="desc-header ">
+                        Dormitories
+                    </h1>
+                    <p class="desc-text ">
+                        In Penn’s thriving residential community, professors and graduate students live among undergraduates, offering mentorship and contributing to the supportive and lively College House network.
+                    </p>
+                    <!-- <button class="desc-button ">
+                            Learn More
+                        </button> -->
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div onclick="location.href='#dining';" class="desc-container ">
+                    <img class="desc-image " src="assets/img/diningHallIcon.png ">
+                    <h1 class="desc-header ">
                         Dining Hall
                     </h1>
-                    <p class="desc-text">
+                    <p class="desc-text ">
+                        Penn is a great place for foodies. Chefs pay special attention to the dietary needs of our students, all while cooking up healthy and fresh offerings daily. Try the all-you-can-eat brunch at Hill House Dining, coffee and pastries at student-run William's
+                        Cafe, and of course traditional Philly cheesesteaks from food trucks lining Spruce Street. </p>
+                    <!-- <button class="desc-button ">
+                            Learn More
+                        </button> -->
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div onclick="openModal();currentSlide(1)" class="desc-container ">
+                    <img class="desc-image " src="assets/img/educationIcon.png">
+                    <h1 class="desc-header ">
+                        Education
+                    </h1>
+                    <p class="desc-text ">
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
                     </p>
-                    <button class="desc-button">
-                        Learn More
-                    </button>
+                    <!-- <button class="desc-button ">
+                            Learn More
+                        </button> -->
                 </div>
             </div>
 
-            <div class="col">
-
+            <div class="col-12 col-md-6 col-xl-4">
+                <div onclick="location.href='#exterior';" class="desc-container ">
+                    <img class="desc-image " src="assets/img/treeIcon.png ">
+                    <h1 class="desc-header ">
+                        Exterior
+                    </h1>
+                    <p class="desc-text ">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                    </p>
+                    <!-- <button class="desc-button ">
+                            Learn More
+                        </button> -->
+                </div>
             </div>
 
-            <div class="col">
-
+            <div class="col-12 col-md-6 col-xl-4">
+                <div onclick="location.href='test';" class="desc-container ">
+                    <img class="desc-image " src="assets/img/npcIcon.png ">
+                    <h1 class="desc-header ">
+                        Tour Guides
+                    </h1>
+                    <p class="desc-text ">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                    </p>
+                    <!-- <button class="desc-button ">
+                            Learn More
+                        </button> -->
+                </div>
             </div>
+
         </div>
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="assets/img/dorms1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="assets/img/RobloxScreenShot20200525_232021279 2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="assets/img/img1.jpg" style="width:100%">
+            </div>
+
+            <div class=" mySlides ">
+                <div class="numbertext ">4 / 4</div>
+                <img src="assets/img/img1.jpg " style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
+            <a class="next " onclick="plusSlides(1) ">&#10095;</a>
+
+        </div>
+    </div>
+    <!-- <div class="container-fluid detail ">
+        <div class="row info ">
+            <div class="col-5 small blue ">
+                <img class="small-img " src="assets/img/dorms1.png ">
+            </div>
+            <div class="col-7 big red ">
+                <h1 class="text-header-detail ">Dormitories</h1>
+                <p class="text-detail "> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                    using It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                    to using It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                    to using
+                </p>
+            </div>
+        </div>
+    </div> -->
+    <script src="assets/js/modal.js "></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 </body>
 
 
