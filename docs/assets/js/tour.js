@@ -130,3 +130,28 @@ let current = classroomOne;
 
 window.onload = function() { renderTour(true, ""); };
 window.onresize = function() { renderTour(false, ""); };
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === "ArrowUp") {
+        if (document.getElementById("top-box").style.display != "none") {
+            renderTour(true, "top")
+        }
+    }
+    if (event.key === "ArrowRight") {
+        if (document.getElementById("right-box").style.display != "none") {
+            renderTour(true, "right")
+        }
+    }
+    if (event.key === "ArrowDown") {
+        if (document.getElementById("bottom-box").style.display != "none") {
+            renderTour(true, "bottom")
+        }
+    }
+
+    if (event.key === "ArrowLeft") {
+        if (document.getElementById("left-box").style.display != "none") {
+            renderTour(true, "left")
+
+        }
+    }
+});

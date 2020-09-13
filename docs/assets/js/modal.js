@@ -35,6 +35,23 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    captionText.innerHTML = dots[slideIndex - 1].alt;
+    // dots[slideIndex - 1].className += " active";
+    // captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        document.getElementById("myModal").style.display = "none";
+    }
+    if (event.key === "ArrowRight") {
+        if (document.getElementById("myModal").style.display == "block") {
+            plusSlides(1);
+        }
+    }
+    if (event.key === "ArrowLeft") {
+        if (document.getElementById("myModal").style.display == "block") {
+            plusSlides(-1);
+        }
+    }
+});
