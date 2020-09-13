@@ -13,15 +13,15 @@ app.get('/', function(req, res) {
 });
 
 app.get('/index', function(req, res) {
-    res.send("assets/index.html");
+    res.send(path.join(__dirname + "index.html"));
 });
 
 app.get('/tour', function(req, res) {
-    res.send("assets/tour.html");
+    res.send(path.join(__dirname + "tour.html"));
 });
 
 app.get('/features', function(req, res) {
-    res.send("assets/features.html");
+    res.send(path.join(__dirname + "features.html"));
 });
 
 app.listen(PORT, () => {
