@@ -6,14 +6,24 @@ var app = express();
 
 const PORT = process.env.PORT || 3000;
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
 app.use(express.static('docs'));
 
 app.get('/', function(req, res) {
-    res.send("Hello World");
+    res.send("index.html");
 });
+
+app.get('/index', function(req, res) {
+    res.send("index.html");
+});
+
+app.get('/tour', function(req, res) {
+    res.send("tour.html");
+});
+
+app.get('/features', function(req, res) {
+    res.send("features.html");
+});
+
 
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
