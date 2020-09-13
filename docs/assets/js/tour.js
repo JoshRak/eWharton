@@ -1,8 +1,10 @@
+let count = 0;
+
 function closeAlert() {
     document.getElementById("alert-box").style.display = "none";
 }
 
-function fade(element) {
+function fade(element, interval) {
     var op = 1;
     var timer = setInterval(function() {
         if (op <= 0.1) {
@@ -12,7 +14,7 @@ function fade(element) {
         element.style.opacity = op;
         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op -= op * 0.1;
-    }, 50);
+    }, interval);
 }
 
 function fadeIn(element, interval) {
@@ -30,12 +32,19 @@ function fadeIn(element, interval) {
 }
 
 function renderTour(load, next) {
+
+
     var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
     let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
     if (current[next]) {
         current = current[next];
     }
+
+    if (count > 0) {
+        document.getElementById("alert-box").style.display = "none";
+    }
+    count = 1;
 
     console.log(current);
     if (load) {
@@ -95,11 +104,7 @@ function renderTour(load, next) {
 
     // document.getElementById("main-label").style.left = .50 * vw - (document.getElementById("main-label").offsetWidth / 2.0) + "px";
 
-    // setTimeout(function() {
-    //     fadeIn(document.getElementById("tour-box"));
-    // }, 0);
-
-
+    // fade(document.getElementById("main-label"), 1000);
 }
 
 class TourScreen {

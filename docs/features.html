@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/modal.css">
-
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='assets/css/features.css' rel='stylesheet'>
@@ -22,7 +22,7 @@
 <body>
     <div class="nav">
         <nav class="navbar navbar-expand-xl">
-            <a href="home" class="navbar-brand">
+            <a href="landing.html" class="navbar-brand">
                 <img src="/assets/img/logo.png" alt="logo" id="logo">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -31,7 +31,7 @@
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav" style="padding-top:8px">
-                    <a id=home href="landing.html" class="nav-item nav-link active">Home</a>
+                    <a id=home href="landing.html" class="nav-item nav-link">Home</a>
                     <a id=tour href="tour.html" class="nav-item nav-link">Virtual Tour</a>
                     <a id=events href="features.html" class="nav-item nav-link active">Features</a>
                 </div>
@@ -45,12 +45,12 @@
     <div class="container-fluid">
         <div class="row boxes">
             <div class="col-12 col-md-6 col-xl-4">
-                <div onclick="location.href='#music';" class="desc-container ">
+                <div onclick="openModal();currentSlide(1)" class="desc-container ">
                     <img class="desc-image " src="assets/img/festivalIcon.png ">
                     <h1 class="desc-header ">
                         Music Festival
                     </h1>
-                    <p class="desc-text ">
+                    <p class="desc-text">
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using It is a long
                     </p>
                     <!-- <button class="desc-button ">
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-xl-4">
-                <div onclick="location.href='#dorms';" class="desc-container ">
+                <div onclick="openModal();currentSlide(1)" class="desc-container ">
                     <img class="desc-image " src="assets/img/bedIcon.png ">
                     <h1 class="desc-header ">
                         Dormitories
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-xl-4">
-                <div onclick="location.href='#dining';" class="desc-container ">
+                <div onclick="openModal();currentSlide(1)" class="desc-container ">
                     <img class="desc-image " src="assets/img/diningHallIcon.png ">
                     <h1 class="desc-header ">
                         Dining Hall
@@ -82,7 +82,7 @@
                         Penn is a great place for foodies. Chefs pay special attention to the dietary needs of our students, all while cooking up healthy and fresh offerings daily. Try the all-you-can-eat brunch at Hill House Dining, coffee and pastries at student-run William's
                         Cafe, and of course traditional Philly cheesesteaks from food trucks lining Spruce Street. </p>
                     <!-- <button class="desc-button ">
-                            Learn More
+                            Learn Moonclick="openModal();currentSlide(1)"re
                         </button> -->
                 </div>
             </div>
@@ -102,7 +102,7 @@
             </div>
 
             <div class="col-12 col-md-6 col-xl-4">
-                <div onclick="location.href='#exterior';" class="desc-container ">
+                <div onclick="openModal();currentSlide(1)" class="desc-container ">
                     <img class="desc-image " src="assets/img/treeIcon.png ">
                     <h1 class="desc-header ">
                         Exterior
@@ -117,7 +117,7 @@
             </div>
 
             <div class="col-12 col-md-6 col-xl-4">
-                <div onclick="location.href='test';" class="desc-container ">
+                <div onclick="openModal();currentSlide(1)" class="desc-container ">
                     <img class="desc-image " src="assets/img/npcIcon.png ">
                     <h1 class="desc-header ">
                         Tour Guides

@@ -4,8 +4,9 @@
     }
 } */
 
+@import "fonts.css";
 body {
-    font-family: Montserrat;
+    font-family: Montsbetter;
 }
 
 .col-12 {

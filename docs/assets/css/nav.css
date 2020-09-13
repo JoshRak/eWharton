@@ -1,3 +1,4 @@
+@import "fonts.css";
 nav {
     background-color: #004785;
     width: 100%;
@@ -6,7 +7,7 @@ nav {
 .nav-item {
     color: white !important;
     font-size: 24px;
-    font-family: Montserrat;
+    font-family: Montsbetter;
 }
 
 .navbar-toggler-icon {

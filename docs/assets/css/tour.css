@@ -1,3 +1,4 @@
+@import "fonts.css";
 #alert-box {
     background-color: rgba(0, 0, 0, 0.05);
     text-align: center;
@@ -11,9 +12,9 @@
 #alert-text {
     max-width: 1200px;
     font-size: 32px;
-    font-weight: 600;
     margin: auto;
-    font-family: Montserrat;
+    font-weight: bold;
+    font-family: MontsBetter;
 }
 
 #alert-img-container {
@@ -32,7 +33,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: cover;
-    font-family: Montserrat;
+    font-family: Montsbetter;
     font-weight: bolder;
     font-size: 32px;
     color: white;
@@ -93,6 +94,32 @@
     transform: rotate(180deg);
 }
 
+
+/* #top-arrow,
+#bottom-arrow,
+#right-arrow,
+#left-arrow,
+#top-text,
+#bottom-text,
+#right-text,
+#left-text {
+    opacity: 0.5;
+} */
+
+#top-box,
+#bottom-box,
+#right-box,
+#left-box {
+    opacity: 0.8;
+}
+
+#top-box:hover,
+#bottom-box:hover,
+#right-box:hover,
+#left-box:hover {
+    opacity: 1.0;
+}
+
 #bottom-text {
     display: inline-block;
     margin: auto;
@@ -104,9 +131,6 @@
     font-size: 64px;
     text-align: center;
     color: white;
-    /* padding: 0px 20px; */
-    /* margin: auto; */
-    /* background-color: blue; */
 }
 
 .arrow-box:hover {
