@@ -1,0 +1,28 @@
+#landing-video {
+    position: fixed;
+    top: 120px;
+    left: 0px;
+}
+
+#video-container {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+#main-container {
+    position: absolute;
+    top: 150px;
+    font-family: MontsBetter;
+    color: white;
+}
+
+#main-text {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#tagline {
+    font-size: 32px;
+}

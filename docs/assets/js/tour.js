@@ -142,7 +142,7 @@ document.addEventListener('keydown', function(event) {
             renderTour(true, "right")
         }
     }
-    if (event.key === "ArrowDown") {
+    if (event.key === "Arro") {
         if (document.getElementById("bottom-box").style.display != "none") {
             renderTour(true, "bottom")
         }
